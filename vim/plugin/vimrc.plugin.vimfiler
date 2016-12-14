@@ -1,0 +1,15 @@
+" http://www.karakaram.com/vimfiler
+
+" vim デフォルトのエクスプローラを vimfiler で置き換える
+let g:vimfiler_asdefault_explorer=1
+" セーフモードを無効にした状態で起動
+let g:vimfiler_safe_mode_by_default=0
+
+" デフォルトのキーマッピングを変更
+augroup vimrc
+  au FileType vimfiler call s:vimfiler_my_settings()
+augroup END
+function! s:vimfiler_my_settings()
+  nmap <buffer> q <Plug>(vimfiler_exit)
+  nmap <buffer> Q <Plug>(vimfiler_hide)
+endfunction

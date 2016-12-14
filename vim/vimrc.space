@@ -1,0 +1,69 @@
+" unite
+nnoremap [unite] <Nop>
+nmap     <Space>u [unite]
+" ヤンク履歴一覧
+nnoremap [unite]y :<C-u>Unite history/yank<CR>
+" grep 検索結果の再呼び出し
+" nnoremap [unite]ur :<C-u>UniteResume search-buffer<CR>
+" 開いているファイルの行番号と内容を表示
+nnoremap [unite]l :<C-u>Unite line<CR>
+
+" バッファ
+nnoremap [buffer] <Nop>
+nmap     <Space>b [buffer]
+" バッファ一覧
+nnoremap [buffer]b :<C-u>Unite buffer<CR>
+
+" ファイル
+nnoremap [file] <Nop>
+nmap     <Space>f [file]
+" プロジェクトファイル
+nnoremap [file]p :<C-u>Unite file_rec/async:!<CR>
+" 現在開いているバッファを IDE 風に開く
+nnoremap [file]f :<C-u>VimFilerBufferDir -split -simple -winwidth=35 -no-quit<CR>
+" 最近使用したファイル一覧
+nnoremap [file]h :<C-u>Unite file_mru<CR>
+" レジスタ一覧
+nnoremap [file]r :<C-u>Unite -buffer-name=register register<CR>
+" 現在開いているバッファのディレクトリを開く
+nnoremap [file]e :<C-u>VimFilerBufferDir -quit<CR>
+" grep
+nnoremap [file]g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+" 編集中のファイルのディレクトリに移動
+nnoremap [file]c :execute ":lcd" . expand("%:p:h")<CR>
+
+" ブックマーク
+nnoremap [bookmark] <Nop>
+nmap     <Space>m [bookmark]
+" ブックマーク一覧
+nnoremap [bookmark]m :<C-u>Unite bookmark<CR>
+" ブックマークに追加
+nnoremap [bookmark]a :<C-u>UniteBookmarkAdd<CR>
+
+" git
+nnoremap [git] <Nop>
+nmap     <Space>g [git]
+" git status を表示
+nnoremap [git]s :<C-u>Gstatus<CR>
+" 現在開いているソースを git add
+nnoremap [git]a :<C-u>Gwrite<CR>
+" git commit
+nnoremap [git]c :<C-u>Gcommit<CR>
+" 現在のソースの変更点を vimdiff で表示
+nnoremap [git]d :<C-u>Gdiff<CR>
+" git log
+nnoremap [git]l :<C-u>Glog<CR>
+" git blame
+nnoremap [git]b :<C-u>Gblame<CR>
+
+" Ruby
+nnoremap [ruby] <Nop>
+nmap     <Space>r [ruby]
+function! SetUpRailsSetting()
+  nnoremap <buffer>[ruby]e :E<CR>
+  nnoremap <buffer>[ruby]a :A<CR>
+  nnoremap <buffer>[ruby]m :Emodel<Space>
+  nnoremap <buffer>[ruby]c :Econtroller<Space>
+  nnoremap <buffer>[ruby]v :Eview<Space>
+  nnoremap <buffer>[ruby]p :Epreview<CR>
+endfunction

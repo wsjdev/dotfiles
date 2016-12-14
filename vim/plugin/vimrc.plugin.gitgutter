@@ -1,0 +1,2 @@
+" 最大変更数を 999 に設定
+let g:gitgutter_max_signs = 999

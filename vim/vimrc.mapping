@@ -1,0 +1,22 @@
+" 誤動作すると困るキーの無効
+nnoremap ZZ <Nop>
+nnoremap ZQ <Nop>
+" ex モードの無効化
+nnoremap Q <Nop>
+" 行移動を直感的に
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+" paste モードのキーマッピング
+nnoremap <F10> :set paste!<CR>:set paste?<CR>
+
+" J と D で半ページ移動
+nnoremap J <C-D>
+nnoremap K <C-U>
+
+" C-方向キー でウィンドウ移動
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h

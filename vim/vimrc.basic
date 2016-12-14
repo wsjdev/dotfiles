@@ -1,0 +1,28 @@
+set vb t_vb=                      " ビープを鳴らさない
+set backspace=indent,eol,start    " バックスペースでなんでも消せるように
+set modelines=0                   " モードラインを使用しない
+set nobackup                      " バックアップファイルは使わない
+set noswapfile                    " スワップファイルは使わない
+set noundofile                    " アンドゥファイルは使わない
+set hidden                        " 編集中でも他のファイルを開けるように
+set confirm                       " 保存されていないファイルがあるときは終了前に確認
+set autoread                      " 外部でファイルに変更がある場合は再読み込み
+set synmaxcol=200                 " 解析は 1 行 200 文字まで
+set clipboard=unnamed             " クリップボードを vim 以外と共有
+set nrformats-=octal              " 数を 8 進数として扱わない
+set nrformats+=alpha              " アルファベットの増減が可能
+set history=1000                  " 履歴を 1000 まで保存
+set virtualedit+=block            " 矩形選択時にカーソルのないところに移動できる
+set ttimeoutlen=75                " shift-o の速度を上げる。
+
+" matchit を有効化
+if !exists('loaded_matchit')
+  runtime macros/matchit.vim
+endif
+
+" ウィンドウを移動するたびにファイルを再読み込みする。
+autocmd WinEnter * checktime
+
+" カーソルを移動させたら再読み込みする。
+autocmd CursorMoved * silent! checktime
+autocmd CursorMovedI * silent! checktime

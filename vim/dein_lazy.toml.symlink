@@ -1,0 +1,35 @@
+[[plugins]]
+repo = 'Shougo/neocomplete'
+if = 'has("lua")'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+depends = ['neosnippet-snippets', 'context_filetype.vim']
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_path = '.*'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+depends = 'neomru.vim'
+on_cmd = ['Unite', 'UniteWithBufferDir', 'UniteWithCurrentDir']
+
+[[plugins]]
+repo = 'basyura/unite-rails'
+depends = 'unite.vim'
+on_ft = ['rb', 'ruby', 'erb']
+
+[[plugin]]
+repo = 'vim-ruby/vim-ruby'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby']

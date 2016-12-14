@@ -1,0 +1,21 @@
+set notitle           " vim を使ってくれてありがとう
+set shortmess+=I      " :intro の画面を出さないようにする
+set laststatus=2      " statusline を常に表示
+set showcmd           " コマンドをステータス行に表示
+set ruler             " ルーラーを表示
+set number            " 行番号を表示
+set showmatch         " 対応する括弧やプレースを表示する
+set ambiwidth=double  " □や○の文字があってもカーソル位置がずれないようにする
+syntax enable         " シンタックスハイライトオン
+
+" カーソル関連
+set cursorline        " カーソル行の背景色を変える
+
+" スクロール関連
+set scrolloff=8       " 上下 8 行の視界を確保
+set sidescrolloff=16  " 左右スクロール時の視界を確保
+set sidescroll=1      " 左右スクロールは一文字づつ行う
+
+" 不可視文字を表示する
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%

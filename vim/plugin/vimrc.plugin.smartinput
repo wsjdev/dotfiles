@@ -1,0 +1,20 @@
+" smartinput-endwise 用の設定
+call smartinput_endwise#define_default_rules()
+
+" Ruby で文字列内展開やブロック引数 do || の補助
+" call smartinput#map_to_trigger('i', '#', '#', '#')
+" call smartinput#define_rule({
+"             \   'at'       : '\%#',
+"             \   'char'     : '#',
+"             \   'input'    : '#{}<Left>',
+"             \   'filetype' : ['ruby'],
+"             \   'syntax'   : ['Constant', 'Special'],
+"             \   })
+" 
+" call smartinput#map_to_trigger('i', '<Bar>', '<Bar>', '<Bar>')
+" call smartinput#define_rule({
+"             \   'at' : '\({\|\<do\>\)\s*\%#',
+"             \   'char' : '<Bar>',
+"             \   'input' : '<Bar><Bar><Left>',
+"             \   'filetype' : ['ruby'],
+"             \    })

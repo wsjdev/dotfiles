@@ -1,0 +1,4 @@
+" ローカルの設定があれば読み込む
+if filereadable(expand('~/.vimrc.local'))
+  execute 'source' expand('~/.vimrc.local')
+endif

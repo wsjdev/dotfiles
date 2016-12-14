@@ -1,0 +1,21 @@
+let g:syntastic_enable_signs=1
+
+" 開いたときにチェック
+let g:syntastic_check_on_open=1
+
+" エラー時にQuickfixを立ち上げる
+" let g:syntastic_auto_loc_list = 1
+
+" セーブ時にチェック
+let g:syntastic_mode_map = {
+      \'mode': 'active',
+      \'active_file_types': ['ruby', 'html'],
+      \}
+
+" チェッカーの設定
+let g:syntastic_ruby_checkers = ['rubocop']
+
+" ステータスライン
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*

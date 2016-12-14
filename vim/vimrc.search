@@ -1,0 +1,6 @@
+set incsearch  " 検索ワードの最初の文字を入力した時点で検索を開始
+set hlsearch   " 検索結果をハイライト表示
+set ignorecase " 検索で大文字小文字を区別しない
+set smartcase  " 検索で大文字小文字両方が入力されたら区別して検索
+set nowrapscan " 検索時にファイルの最後まで行っても最初に戻らない
+set gdefault   " 検索のとき g オプションをデフォルトで有効にする
