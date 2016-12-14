@@ -1,0 +1,84 @@
+# prefix キーを C-a に変更する
+unbind C-b
+set -g prefix C-t
+bind C-t send-prefix
+
+# キーストロークのディレイを減らす
+set -sg escape-time 1
+
+# ウィンドウのインデックスを 1 から始める
+set -g base-index 1
+
+# ペインのインデックスを 1 から始める
+setw -g pane-base-index 1
+
+# ウィンドウの自動リネーム off
+set-window-option -g automatic-rename off
+
+# 設定ファイルをリロードする
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+# Vim のキーバインドでペインを移動する
+bind v split-window -h
+bind s split-window -v
+
+# Vim のキーバインドでペインを移動する
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Vim のキーバインドでペインをリサイズする
+bind -r C-h resize-pane -L 10
+bind -r C-j resize-pane -D 10
+bind -r C-k resize-pane -U 10
+bind -r C-l resize-pane -R 10
+
+# 256 色端末を使用する
+set -g default-terminal "screen-256color"
+
+# ステータスバーの色を設定する
+set -g status-fg white
+set -g status-bg black
+
+# アクティブなウィンドウを目立たせる
+setw -g window-status-current-fg black
+setw -g window-status-current-bg white
+setw -g window-status-current-attr bright
+
+# ペインボーダーの色を設定する
+set -g pane-border-fg green
+set -g pane-border-bg black
+# アクティブなペインを目立たせる
+set -g pane-active-border-fg yellow
+set -g pane-active-border-bg black
+
+# コマンドラインの色を設定する
+set -g message-fg white
+set -g message-bg black
+set -g message-attr bright
+
+# ステータスバーを設定する
+## 右パネルを設定する
+set -g status-right "#[fg=white][%Y-%m-%d(%a) %H:%M]"
+## ヴィジュアルノーティフィケーションを有効にする
+setw -g monitor-activity on
+set -g visual-activity on
+
+# コピーモードを設定する
+## vi のキーバインドを使用する
+setw -g mode-keys vi
+## コピーモードの操作を vi 風に設定する
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+unbind -t vi-copy Enter
+bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
+
+bind-key N switch-client -n
+bind-key P switch-client -p
+
+# 全てのベルを無視
+set-option -g bell-action none
+
+# 履歴を 5000 まで記録
+set-option -g history-limit 5000
