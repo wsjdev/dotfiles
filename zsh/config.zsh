@@ -41,3 +41,7 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+
+# vim 風キーバインドにする
+bindkey -v
+bindkey -v '^?' backward-delete-char
