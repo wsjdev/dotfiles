@@ -71,9 +71,10 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
+  export PROMPT=$'\n[%n]%{${reset_color}%} in %{${fg[yellow]}%}%~%{${reset_color}%} $(git_dirty)$(need_push) %{${reset_color}%}\n%(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(#\'o\')/ <!(#;-;%)\\ <)%{${reset_color}%} '
+  export PROMPT2='[%n]> '
+  export SPROMPT="%{$fg[red]%}%{$suggest%}(#'~'%)? < もしかして %B%r%b %{$fg[red]%}かな? [そう!(y), 違う!(n),a,e]:${reset_color} "
 }
 
 precmd() {
