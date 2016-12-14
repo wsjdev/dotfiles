@@ -72,9 +72,9 @@ directory_name() {
 }
 
 set_prompt () {
-  export PROMPT=$'\n[%n]%{${reset_color}%} in %{${fg[yellow]}%}%~%{${reset_color}%} $(git_dirty)$(need_push) %{${reset_color}%}\n%(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(#\'o\')/ <!(#;-;%)\\ <)%{${reset_color}%} '
+  export PROMPT=$'\n[%n]%{${reset_color}%} in %{${fg[yellow]}%}%~%{${reset_color}%} $(git_dirty)$(need_push) %{${reset_color}%}\n%(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(#\'-\')/ <!(#;-;%)\\ <)%{${reset_color}%} '
   export PROMPT2='[%n]> '
-  export SPROMPT="%{$fg[red]%}%{$suggest%}(#'~'%)? < もしかして %B%r%b %{$fg[red]%}かな? [そう!(y), 違う!(n),a,e]:${reset_color} "
+  export SPROMPT="%{$fg[red]%}%{$suggest%}(#'o'%)? < もしかして %B%r%b %{$fg[red]%}かな? [そう!(y), 違う!(n),a,e]:${reset_color} "
 }
 
 precmd() {
