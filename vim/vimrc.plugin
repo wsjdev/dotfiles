@@ -1,13 +1,13 @@
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.auto-ctags
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.gitgutter
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.neosnippet
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.smartinput
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.syntastic
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.unite
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.vim-rails
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.vimfiler
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.incsearch
-source ~/dotfiles/vimrc/plugin/vimrc.plugin.zenkaku
+source $ZSH/vim/plugin/vimrc.plugin.auto-ctags
+source $ZSH/vim/plugin/vimrc.plugin.gitgutter
+source $ZSH/vim/plugin/vimrc.plugin.neosnippet
+source $ZSH/vim/plugin/vimrc.plugin.smartinput
+source $ZSH/vim/plugin/vimrc.plugin.syntastic
+source $ZSH/vim/plugin/vimrc.plugin.unite
+source $ZSH/vim/plugin/vimrc.plugin.vim-rails
+source $ZSH/vim/plugin/vimrc.plugin.vimfiler
+source $ZSH/vim/plugin/vimrc.plugin.incsearch
+source $ZSH/vim/plugin/vimrc.plugin.zenkaku
 
 " Rubyのオムニ補完を設定
 let g:rubycomplete_buffer_loading = 1
