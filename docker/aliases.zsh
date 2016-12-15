@@ -1,2 +1,5 @@
 alias d='docker $*'
+alias dstop='docker ps -aq | xargs docker stop'
+alias drm='docker ps -aq | xargs docker rm'
+alias dirm='docker images -q | xargs docker rmi'
 alias d-c='docker-compose $*'
