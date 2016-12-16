@@ -19,8 +19,8 @@ set-window-option -g automatic-rename off
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
 # Vim のキーバインドでペインを移動する
-bind v split-window -h
-bind s split-window -v
+bind v split-window -hc "#{pane_current_path}"
+bind s split-window -vc "#{pane_current_path}"
 
 # Vim のキーバインドでペインを移動する
 bind h select-pane -L
