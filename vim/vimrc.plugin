@@ -1,13 +1,5 @@
-source $ZSH/vim/plugin/vimrc.plugin.auto-ctags
-source $ZSH/vim/plugin/vimrc.plugin.gitgutter
-source $ZSH/vim/plugin/vimrc.plugin.neosnippet
-source $ZSH/vim/plugin/vimrc.plugin.smartinput
-source $ZSH/vim/plugin/vimrc.plugin.syntastic
-source $ZSH/vim/plugin/vimrc.plugin.unite
-source $ZSH/vim/plugin/vimrc.plugin.vim-rails
-source $ZSH/vim/plugin/vimrc.plugin.vimfiler
-source $ZSH/vim/plugin/vimrc.plugin.incsearch
-source $ZSH/vim/plugin/vimrc.plugin.zenkaku
+set runtimepath+=$ZSH/vim/
+runtime! plugin/vimrc.plugin.*
 
 " Rubyのオムニ補完を設定
 let g:rubycomplete_buffer_loading = 1
