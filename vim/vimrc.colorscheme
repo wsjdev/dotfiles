@@ -5,3 +5,6 @@ else
   set t_Co=16
 endif
 colorscheme jellybeans
+
+" linux tmux 時の背景色が正しく塗りつぶされない問題の対策
+set t_ut=
