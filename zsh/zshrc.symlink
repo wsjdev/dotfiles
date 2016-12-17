@@ -39,3 +39,8 @@ do
 done
 
 unset config_files
+
+for file in $ZSH/**/*.zsh.post
+do
+  source $file
+done
