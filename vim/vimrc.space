@@ -1,6 +1,9 @@
+nnoremap [space] <Esc>
+nmap     <Space> [space]
+
 " unite
 nnoremap [unite] <Nop>
-nmap     <Space>u [unite]
+nmap     [space]u [unite]
 " ヤンク履歴一覧
 nnoremap [unite]y :<C-u>Unite history/yank<CR>
 " grep 検索結果の再呼び出し
@@ -10,13 +13,13 @@ nnoremap [unite]l :<C-u>Unite line<CR>
 
 " バッファ
 nnoremap [buffer] <Nop>
-nmap     <Space>b [buffer]
+nmap     [space]b [buffer]
 " バッファ一覧
 nnoremap [buffer]b :<C-u>Unite buffer<CR>
 
 " ファイル
 nnoremap [file] <Nop>
-nmap     <Space>f [file]
+nmap     [space]f [file]
 " プロジェクトファイル
 nnoremap [file]p :<C-u>Unite file_rec/async:!<CR>
 " 現在開いているバッファを IDE 風に開く
@@ -34,7 +37,7 @@ nnoremap [file]c :execute ":lcd" . expand("%:p:h")<CR>
 
 " ブックマーク
 nnoremap [bookmark] <Nop>
-nmap     <Space>m [bookmark]
+nmap     [space]m [bookmark]
 " ブックマーク一覧
 nnoremap [bookmark]m :<C-u>Unite bookmark<CR>
 " ブックマークに追加
@@ -42,7 +45,7 @@ nnoremap [bookmark]a :<C-u>UniteBookmarkAdd<CR>
 
 " git
 nnoremap [git] <Nop>
-nmap     <Space>g [git]
+nmap     [space]g [git]
 " git status を表示
 nnoremap [git]s :<C-u>Gstatus<CR>
 " 現在開いているソースを git add
@@ -58,7 +61,7 @@ nnoremap [git]b :<C-u>Gblame<CR>
 
 " Ruby
 nnoremap [ruby] <Nop>
-nmap     <Space>r [ruby]
+nmap     [space]r [ruby]
 function! SetUpRailsSetting()
   nnoremap <buffer>[ruby]e :E<CR>
   nnoremap <buffer>[ruby]a :A<CR>
