@@ -9,6 +9,63 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+
+        tree  = log --oneline --graph --decorate
+
+        a     = add
+        aa    = add --all
+
+        b     = branch
+        bd    = branch -d
+        bD    = branch -D
+
+        c     = commit
+        cm    = commit -m
+        cv    = commit -v
+        ca    = commit --amend
+        cav   = commit --amend -v
+        can   = commit --amend --no-edit
+        cf    = commit --allow-empty -m 'first commit'
+
+        co    = checkout
+        cob   = checkout -b
+
+        d     = diff
+        dw    = diff --color-words
+        dc    = diff --cached
+        dcw   = diff --cached --color-words
+
+        l     = log
+        lp    = log -p
+        ln    = log --name-status
+        lo    = log --oneline
+        lon   = log --oneline --name-status
+        lod   = log --oneline --decorate
+        lond  = log --oneline --name-status --decorate
+
+        m     = merge
+
+        p     = push
+        po    = push origin
+        poh   = push origin HEAD
+
+        pl    = pull
+        plr   = pull --rebase
+
+        r     = reset
+        rh    = reset HEAD
+        rp    = reset HEAD~
+        rph   = reset --hard HEAD~
+
+        re    = rebase
+        rei   = rebase -i
+
+        rv    = revert
+
+        s     = status
+
+        t     = log --oneline --graph --decorate
+        ta    = log --oneline --graph --decorate --all
 [color]
         diff = auto
         status = auto
