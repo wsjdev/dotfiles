@@ -1,3 +1,4 @@
+" plugin/ 以下の設定ファイルをすべて読み込む
 set runtimepath+=$ZSH/vim/
 runtime! plugin/vimrc.plugin.*
 
