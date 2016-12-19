@@ -21,3 +21,13 @@ alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
+
+# g を git に alias
+# 引数なしなら git status として扱う
+g() {
+  if [[ $# -gt 0 ]]; then
+    git "$@"
+  else
+    git status
+  fi
+}
