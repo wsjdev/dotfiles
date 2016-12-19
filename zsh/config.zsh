@@ -44,3 +44,4 @@ bindkey '^?' backward-delete-char
 # vim 風キーバインドにする
 bindkey -v
 bindkey -v '^?' backward-delete-char
+bindkey -M viins '^g' vi-cmd-mode
