@@ -1,4 +1,6 @@
 brew 'gcc'
+brew 'tmux'
+brew 'coreutils'
 brew 'vim'
 brew 'rbenv'
 brew 'ruby-build'
