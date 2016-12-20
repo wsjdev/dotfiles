@@ -35,6 +35,9 @@
         dc    = diff --cached
         dcw   = diff --cached --color-words
 
+        f     = fetch
+        fa    = fetch --all
+
         l     = log
         lp    = log -p
         ln    = log --name-status
