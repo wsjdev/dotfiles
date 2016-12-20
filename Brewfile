@@ -1,0 +1,6 @@
+brew 'gcc'
+brew 'vim'
+brew 'rbenv'
+brew 'ruby-build'
+brew 'go'
+brew 'docker'
