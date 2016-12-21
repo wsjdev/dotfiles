@@ -23,8 +23,8 @@ call dein#load_toml(s:lazy_toml, {'lazy': 1})
 call dein#end()
 
 " vimproc は最初にインストール
-if dein#check_install(['vimproc'])
-  call dein#install(['vimproc'])
+if dein#check_install(['vimproc.vim'])
+  call dein#install(['vimproc.vim'])
 endif
 " その他のインストール
 if dein#check_install()
