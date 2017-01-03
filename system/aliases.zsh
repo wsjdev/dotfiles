@@ -9,6 +9,6 @@ case ${OSTYPE} in
     alias ls='ls -F --color=auto'
     ;;
 esac
-alias l="ls -lAh"
-alias ll="ls -l"
+alias ll="ls -lh"
+alias lla="ls -lAh"
 alias la='ls -A'
