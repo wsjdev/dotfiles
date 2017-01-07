@@ -6,8 +6,6 @@
    create-lockfiles nil
    ;; エラー吹き出し持続時間を 10 分に
    flycheck-pos-tip-timeout 600
-   ;; org インデント
-   org-startup-indented t
    )
 
   ;; vim
@@ -41,6 +39,8 @@
         (setq x-select-enable-clipboard t)))
 
   ;; org
+  ;; 見た目のインデント
+  (setq-default org-startup-indented t)
   ;; アジェンダ
   (setq org-agenda-files (list "~/Dropbox/org"))
   ;; 状態
