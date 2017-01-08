@@ -1,6 +1,5 @@
 brew 'gcc'
 brew 'tmux'
-brew 'coreutils'
 brew 'vim'
 brew 'direnv'
 brew 'rbenv'
