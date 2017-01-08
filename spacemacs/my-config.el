@@ -10,7 +10,8 @@
 
   ;; vim
   ;; C-h にバックスペースを割り当てる
-  (keyboard-translate ?\C-h ?\C-?)
+  (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
+  (define-key key-translation-map (kbd "C-?") (kbd "C-h"))
   ;; (evil-ex-define-cmd "q[uit]" (lambda ()
   ;;                                (interactive)
   ;;                                (condition-case err-var (delete-window)
