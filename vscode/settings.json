@@ -1,0 +1,9 @@
+{
+    "editor.cursorBlinking": "solid",
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "vim.useSystemClipboard": true,
+    "ruby.lint": {
+        "rubocop": true
+    }
+}
