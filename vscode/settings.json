@@ -1,7 +1,12 @@
 {
     "editor.cursorBlinking": "solid",
     "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "editor.fontFamily": "Ricty Diminished",
+    "editor.fontSize": 15,
+    "editor.fontWeight": "100",
     "files.insertFinalNewline": true,
+    "extensions.autoUpdate": true,
     "vim.useSystemClipboard": true,
     "ruby.lint": {
         "rubocop": true
