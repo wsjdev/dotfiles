@@ -6,6 +6,7 @@
     "editor.fontSize": 15,
     "editor.fontWeight": "100",
     "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     "extensions.autoUpdate": true,
     "vim.useSystemClipboard": true,
     "ruby.lint": {
