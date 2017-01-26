@@ -39,6 +39,11 @@ git_prompt_info () {
 need_push () {
   if [ $($git rev-parse --is-inside-work-tree 2>/dev/null) ]
   then
+    if [[ $(git remote | wc -l) == 0 ]]
+    then
+      echo " "
+      return
+    fi
     number=$($git cherry -v origin/$(git symbolic-ref --short HEAD) | wc -l | bc)
 
     if [[ $number == 0 ]]
