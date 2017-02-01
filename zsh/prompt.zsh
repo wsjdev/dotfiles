@@ -39,7 +39,7 @@ git_prompt_info () {
 need_push () {
   if [ $($git rev-parse --is-inside-work-tree 2>/dev/null) ]
   then
-    if [[ $(git remote | wc -l) == 0 ]]
+    if [[ $(git branch -r | grep origin/`git rev-parse --abbrev-ref HEAD`) == '' ]]
     then
       echo " "
       return
