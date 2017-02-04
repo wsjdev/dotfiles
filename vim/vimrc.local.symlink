@@ -1,0 +1,10 @@
+" 行末と次の行の行頭を繋げない
+set whichwrap=
+" l で改行文字までカーソルが移動するのを阻止
+" 矩形選択モード時に、文字がない場所にもカーソルが移動できるように
+set virtualedit=block
+" 画面下まで行った時のスクロールをなめらかに
+set scrolljump=0
+
+" Ruby の文法チェック
+let g:syntastic_ruby_checkers = ['rubocop']
