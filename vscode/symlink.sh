@@ -8,4 +8,4 @@ else
   path="$HOME/Library/Application Support/Code/User/"
 fi
 mkdir -p $path
-ln -s "$ZSH/vscode/$file" "$path$file"
+ln -sf "$ZSH/vscode/$file" "$path$file"
