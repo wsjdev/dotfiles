@@ -27,6 +27,13 @@
         can   = commit --amend --no-edit
         cf    = commit --allow-empty -m 'first commit'
 
+        cl    = clean
+        cln   = clean -n
+        clf   = clean -f
+        clfn  = clean -fn
+        cld   = clean -d
+        cldn  = clean -dn
+
         co    = checkout
         cob   = checkout -b
 
