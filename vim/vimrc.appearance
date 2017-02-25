@@ -1,6 +1,7 @@
 set notitle           " vim を使ってくれてありがとう
 set shortmess+=I      " :intro の画面を出さないようにする
 set laststatus=2      " statusline を常に表示
+set showtabline=2     " tabline を常に表示
 set showcmd           " コマンドをステータス行に表示
 set ruler             " ルーラーを表示
 set number            " 行番号を表示

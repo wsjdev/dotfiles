@@ -2,5 +2,4 @@ filetype indent on    " 自動でインデント
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0
-set showtabline=2
 set expandtab         " タブ入力を空白に置換
