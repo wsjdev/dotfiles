@@ -25,7 +25,7 @@
         ca    = commit --amend
         cav   = commit --amend -v
         can   = commit --amend --no-edit
-        cf    = commit --allow-empty -m 'first commit'
+        cf    = commit --allow-empty -m 'Initial commit'
 
         cl    = clean
         cln   = clean -n
