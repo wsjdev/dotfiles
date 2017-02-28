@@ -1,1 +1,3 @@
 Bundle 'szw/vim-tags'
+Bundle 'kannokanno/previm'
+Bundle 'tyru/open-browser.vim'
