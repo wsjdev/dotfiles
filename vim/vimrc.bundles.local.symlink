@@ -1,3 +1,6 @@
+UnBundle 'spf13/vim-preview'
+UnBundle 'amirh/HTML-AutoCloseTag'
+
 Bundle 'szw/vim-tags'
 Bundle 'kannokanno/previm'
 Bundle 'tyru/open-browser.vim'
