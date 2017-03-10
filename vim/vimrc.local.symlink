@@ -18,3 +18,6 @@ inoremap <expr><CR> neosnippet#expandable() ? neosnippet#mappings#expand_or_jump
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0
+
+" .rake ファイルを ruby ファイルとして認識する
+autocmd BufRead,BufNewFile *.rake set filetype=ruby
