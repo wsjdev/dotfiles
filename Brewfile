@@ -1,5 +1,6 @@
 brew 'gcc'
 brew 'lua'
+brew 'ctags'
 brew 'tmux'
 brew 'vim', args: ['with-lua']
 brew 'emacs'
