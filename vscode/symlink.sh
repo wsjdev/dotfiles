@@ -7,5 +7,5 @@ then
 else
   path="$HOME/Library/Application Support/Code/User/"
 fi
-mkdir -p $path
+mkdir -p "$path"
 ln -sf "$ZSH/vscode/$file" "$path$file"
