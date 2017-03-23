@@ -1,7 +1,7 @@
 #!/bin/sh
 
 file="settings.json"
-if [ "$(uname -s)" == "Darwin" ]
+if test "$(uname)" = "Darwin"
 then
   path="$HOME/Library/Application Support/Code/User/"
 else
