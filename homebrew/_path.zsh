@@ -1,4 +1,6 @@
-if test "$(expr substr $(uname -s) 1 5)" = "Linux"
+if test "$(uname)" = "Darwin"
+then
+elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
 then
   export PATH="$HOME/.linuxbrew/bin:$PATH"
   export PATH="$HOME/.linuxbrew/sbin:$PATH"
