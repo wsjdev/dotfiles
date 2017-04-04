@@ -353,6 +353,15 @@ you should place your code here."
         (set-frame-parameter nil 'fullscreen 'fullboth)
         ;; OS とクリップボードを共有
         (setq x-select-enable-clipboard t)))
+
+  ;; org
+  ;; 自動インデント
+  (setq-default org-startup-indented t)
+  ;; アジェンダファイルパス
+  (setq org-agenda-files (list "~/Dropbox/agenda"))
+  ;; 状態
+  (setq org-todo-keywords
+        '((sequence "TODO(t)" "STARTED(s)" "NEXT(n)" "WAIT(w)" "|" "DONE(d)" "CANCEL(c)")))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
