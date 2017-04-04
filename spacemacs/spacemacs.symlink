@@ -336,6 +336,14 @@ you should place your code here."
   (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
   ;; C-? に C-h を割り当てる
   (define-key key-translation-map (kbd "C-?") (kbd "C-h"))
+
+  ;; GUI モード
+  (if window-system
+      (progn
+        ;; フルスクリーンで起動
+        (set-frame-parameter nil 'fullscreen 'fullboth)
+        ;; OS とクリップボードを共有
+        (setq x-select-enable-clipboard t)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
