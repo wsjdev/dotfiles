@@ -322,7 +322,8 @@ you should place your code here."
   (global-set-key "\M-P" (lambda ()
                            (interactive)
                            (scroll-down 1)
-                           (previous-line))))
+                           (previous-line)))
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
