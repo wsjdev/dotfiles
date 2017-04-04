@@ -313,6 +313,8 @@ you should place your code here."
   (setq
    ;; EOF に改行を自動挿入
    require-final-newline t
+   ;; エラー吹き出し持続時間を 10 分に
+   flycheck-pos-tip-timeout 600
    )
 
   ;; M-n M-p で画面スクロール
