@@ -330,6 +330,12 @@ you should place your code here."
                            (interactive)
                            (scroll-down 1)
                            (previous-line)))
+
+  ;; vim
+  ;; C-h にバックスペースを割り当てる
+  (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
+  ;; C-? に C-h を割り当てる
+  (define-key key-translation-map (kbd "C-?") (kbd "C-h"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
