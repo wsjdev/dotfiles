@@ -362,6 +362,14 @@ you should place your code here."
   ;; 状態
   (setq org-todo-keywords
         '((sequence "TODO(t)" "STARTED(s)" "NEXT(n)" "WAIT(w)" "|" "DONE(d)" "CANCEL(c)")))
+  ;; capture
+  (setq org-capture-templates
+        '(("m" "Memo" entry (file "~/Dropbox/memo.org")
+           "* %T\n%?")
+          ("c" "Calendar" entry (file "~/Dropbox/agenda/calendar.org")
+           "* TODO %?")
+          ("t" "Today" entry (file "~/Dropbox/agenda/today.org")
+           "* TODO %?")))
 
   ;; direnv
   (direnv-mode)
