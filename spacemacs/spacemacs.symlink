@@ -64,7 +64,9 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(direnv)
+   dotspacemacs-additional-packages '(
+                                      direnv
+                                      ddskk)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -373,6 +375,9 @@ you should place your code here."
 
   ;; direnv
   (direnv-mode)
+
+  ;; ddskk
+  (global-set-key "\C-\\" 'skk-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
