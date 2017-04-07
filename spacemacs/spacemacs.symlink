@@ -381,6 +381,8 @@ you should place your code here."
   (direnv-mode)
 
   ;; ddskk
+  ;; ¥ と \ を同じものとして扱う
+  (define-key key-translation-map (kbd "C-¥") (kbd "C-\\"))
   (global-set-key "\C-\\" 'skk-mode)
   )
 
