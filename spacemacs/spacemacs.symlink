@@ -356,6 +356,10 @@ you should place your code here."
         ;; OS とクリップボードを共有
         (setq x-select-enable-clipboard t)))
 
+  ;; google translate
+  (setq google-translate-default-source-language "en")
+  (setq google-translate-default-target-language "zh")
+
   ;; org
   ;; 自動インデント
   (setq-default org-startup-indented t)
