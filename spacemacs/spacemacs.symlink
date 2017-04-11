@@ -50,6 +50,9 @@ values."
      spell-checking
      syntax-checking
      version-control
+     (c-c++ :variables
+            c-c++-default-mode-for-headers 'c++-mode
+            c-c++-enable-clang-support t)
      (ruby :variables
            ruby-enable-ruby-on-rails-support t
            ruby-enable-enh-ruby-mode t
