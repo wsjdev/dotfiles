@@ -393,10 +393,10 @@ you should place your code here."
 
   ;; shell script
   (add-hook 'sh-mode-hook (lambda ()
-            (interactive)
-            ;; インデント幅を 2 に変更
-            (setq sh-basic-offset 2
-                  sh-indentation 2)))
+                            (interactive)
+                            ;; インデント幅を 2 に変更
+                            (setq sh-basic-offset 2
+                                  sh-indentation 2)))
 
   (server-start)
   )
