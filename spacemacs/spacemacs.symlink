@@ -348,6 +348,9 @@ you should place your code here."
   ;; vim
   ;; C-h にバックスペースを割り当てる
   (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
+  (define-key key-translation-map (kbd "M-h") (kbd "M-<DEL>"))
+  ;; C-w で常に単語の削除を行う
+  (define-key key-translation-map (kbd "C-w") (kbd "M-<DEL>"))
   ;; C-? に C-h を割り当てる
   (define-key key-translation-map (kbd "C-?") (kbd "C-h"))
 
