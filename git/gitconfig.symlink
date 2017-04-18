@@ -83,7 +83,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = emacsclient
 [apply]
         whitespace = nowarn
 [mergetool]

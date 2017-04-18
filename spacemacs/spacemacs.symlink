@@ -394,6 +394,8 @@ you should place your code here."
             ;; インデント幅を 2 に変更
             (setq sh-basic-offset 2
                   sh-indentation 2)))
+
+  (server-start)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
