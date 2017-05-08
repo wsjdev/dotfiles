@@ -19,5 +19,15 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=0
 
+" Emacs key bind
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+cnoremap <C-f> <Right>
+cnoremap <C-b> <Left>
+inoremap <C-a> <home>
+inoremap <C-e> <end>
+cnoremap <C-a> <home>
+cnoremap <C-e> <end>
+
 " .rake ファイルを ruby ファイルとして認識する
 autocmd BufRead,BufNewFile *.rake set filetype=ruby
