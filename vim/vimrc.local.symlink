@@ -14,6 +14,9 @@ let g:syntastic_ruby_checkers = ['rubocop']
 " 補完を決定できない問題に対する応急措置
 inoremap <expr><CR> neosnippet#expandable() ? neosnippet#mappings#expand_or_jump_impl() : pumvisible() ? neocomplete#close_popup() : "\<CR>"
 
+" マウスを無効にする
+set mouse=
+
 " デフォルトのインデント幅を 2 に
 set tabstop=2
 set shiftwidth=2
