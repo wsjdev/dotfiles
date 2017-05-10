@@ -31,6 +31,8 @@ inoremap <C-a> <home>
 inoremap <C-e> <end>
 cnoremap <C-a> <home>
 cnoremap <C-e> <end>
+inoremap <expr> <C-k> "\<C-g>u".(col('.') == col('$') ? '<C-o>gJ' : '<C-o>D')
+cnoremap <C-k> <C-\>e getcmdpos() == 1 ? '' : getcmdline()[:getcmdpos()-2]<CR>
 
 " .rake ファイルを ruby ファイルとして認識する
 autocmd BufRead,BufNewFile *.rake set filetype=ruby
