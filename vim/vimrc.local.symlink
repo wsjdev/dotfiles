@@ -5,6 +5,8 @@ set whichwrap=
 set virtualedit=block
 " 画面下まで行った時のスクロールをなめらかに
 set scrolljump=0
+" 不可視文字の描画
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 " ファイルを開いたときにも文法チェック
 let g:syntastic_check_on_open=1
