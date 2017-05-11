@@ -31,10 +31,10 @@ inoremap <C-f> <Right>
 inoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 cnoremap <C-b> <Left>
-inoremap <C-a> <home>
-inoremap <C-e> <end>
-cnoremap <C-a> <home>
-cnoremap <C-e> <end>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
 inoremap <C-d> <Del>
 cnoremap <C-d> <Del>
 inoremap <expr> <C-k> "\<C-g>u".(col('.') == col('$') ? '<C-o>gJ' : '<C-o>D')
