@@ -7,6 +7,8 @@ set virtualedit=block
 set scrolljump=0
 " 不可視文字の描画
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+" →のような全角記号を正しく表示
+set ambiwidth=double
 
 " ファイルを開いたときにも文法チェック
 let g:syntastic_check_on_open=1
